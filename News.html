@@ -1,0 +1,20 @@
+---
+layout: blog
+title: News
+---
+<h1>News</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <li class="posts">
+      <h3>{{ post.title }}</h3>
+      <p style="font-size: 0.9rem">{{ post.date | date: "%-d/%-m/%y" }}</p>
+      <img class="post-thumbnail" src="{{post.image}}" alt="Post Thumbnail">
+      <p>{{ post.myexcerpt }}</p>
+      <p><a class="my-button" href="{{ post.url }}">Lesen Sie mehr...</a></p>
+      <div class="clearfix"></div>
+    </li>
+  </a>
+  {% endfor %}
+</ul>

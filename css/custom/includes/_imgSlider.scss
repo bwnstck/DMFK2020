@@ -1,0 +1,21 @@
+#imgSlider {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.carousel-item {
+    height: 40vh;
+    min-height: 250px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-item {
+        background-size: contain
+    }
+ }

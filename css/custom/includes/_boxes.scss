@@ -1,0 +1,66 @@
+#boxes {
+    max-width: 1200px;
+    margin: 2em auto;
+
+    a {
+        text-decoration: none;
+    }
+
+    h2{
+        color: $white;
+        // text-shadow: 0 0 1px $black;
+    }
+
+    #card-about {
+        background: url('../img/img_innenansicht.jpg');
+    }
+    #card-leistungen {
+        background: url('../img/img_leistungen.jpg');
+    }
+    #card-brillen {
+        background: url('../img/brillen/brille10.jpg');
+    }
+    #card-kontakt {
+        background: url('../img/img_leistungen3.jpg');
+    }
+
+    @media (min-width: 576px) {
+        #card-about, #card-leistungen {
+            margin-bottom: 2em;
+
+        }
+     }
+
+     .col-sm-6 {
+         padding: 0px 1.2em;
+     }
+
+
+    .card {
+        margin: 0.25em;
+        background-color: $bg-color;
+        border-style: none;
+        background-size: cover !important; 
+        background-position: center !important;
+        width: 100% !important;
+        height: 400px;
+    }
+        .primary-overlay{
+            background: rgba(56, 61, 67, 0.2);
+            }
+    
+    .textbox {
+        min-width: 200px;
+        border-radius: 5px;
+        margin-top: 161px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+    
+  
+}
+// .foto {
+//     width: 100px;
+// }

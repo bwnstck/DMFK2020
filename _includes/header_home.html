@@ -1,0 +1,46 @@
+<!-- NAV -->
+
+<nav class="navbar navbar-expand-md navbar-light py-2">
+    <div class="container">
+        <a class="navbar-brand " href="/">
+          <img src="/img/logo_small.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+
+            {% for item in site.data.menus %}
+              <li class="nav-item">
+                <a href="{{item.link}}" class="{% if page.url contains '{{item.title}}' %} current {% endif %}nav-link">
+                  {{item.title}}
+                  </a>
+              </li>
+            {% endfor %}
+            <!-- <li class="nav-item">
+              <a href="{{ site.baseurl }}/" class="current nav-link">Info</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/about/" class="{% if page.url contains 'about' %} current {% endif %}nav-link">Anmeldung</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/leistungen/" class="{% if page.url contains 'leistungen' %} current {% endif %}nav-link">Anfahrt</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/brillen/" class="{% if page.url contains 'brillen' %} current {% endif %}nav-link">Anmeldung</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/kontakt/" class="{% if page.url contains 'kontakt' %} current {% endif %}nav-link">Kontakt</a>
+            </li> -->
+
+          </ul>
+        </div>
+      </div>
+</nav>
+
+

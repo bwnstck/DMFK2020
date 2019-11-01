@@ -1,0 +1,15 @@
+section.leistungen {
+    .card {
+        background: $bg-color;
+        color: $white;
+
+        h5 {
+            color: $white;
+        }
+    }
+
+    .card-body {
+        min-height: 336px;
+    }
+
+}

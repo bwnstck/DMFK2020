@@ -1,0 +1,41 @@
+
+
+div.urlaub {
+    background-color: $bg-color;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+
+    p {
+        color: $white;
+        padding: 1em;
+    }
+
+}
+
+div.map {
+    padding-top: 1em;
+    background-color: $bg-color;
+    text-align: center !important;
+
+    p {
+        color: $white;
+    }
+
+    svg {
+        margin-right: 0.5em;
+    }
+
+    iframe {
+        width: 100vw;
+        max-width: 1000px;
+        height: 350px;
+        margin-bottom: 1em;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 20px 0;
+    }
+}

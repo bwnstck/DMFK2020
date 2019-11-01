@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Benjamin Weinstock> -- <CEO> -- <info@flimmerkiste.xyz>
+
+# THANKS
+
+    Olga & Elvira
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll // jekyllrb.com
+    Bootstrap // getboostrap.com
+    FontAwesome // fontawesome.com
