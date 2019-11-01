@@ -1,27 +1,27 @@
 .navbar{
     img {
       width: 100px;
-
       margin-right: 2em;
     }
   
     .nav-item{
       font-size: 1rem;
-      padding-right: 10px;
+      padding-right: 5px;
     }
   }
   
+  // Hintergrund NavBar
   .navbar.py-2{
     background-color: $fg-color;
   }
 
-  div.container.justify-content-center{
-    max-width: 950px;
-  }
+  // div.container.justify-content-center{
+  //   max-width: 950px;
+  // }
 
-  .navbar-brand {
-    margin: 0;
-  }
+  // .navbar-brand {
+  //   margin: 0;
+  // }
   
 
 

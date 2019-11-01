@@ -1,19 +1,4 @@
 
-
-div.urlaub {
-    background-color: $bg-color;
-    max-width: 500px;
-    margin: 0 auto;
-    border-radius: 5px;
-
-
-    p {
-        color: $white;
-        padding: 1em;
-    }
-
-}
-
 div.map {
     padding-top: 1em;
     background-color: $bg-color;
@@ -28,7 +13,7 @@ div.map {
     }
 
     iframe {
-        width: 100vw;
+        width: 100%;
         max-width: 1000px;
         height: 350px;
         margin-bottom: 1em;

@@ -2346,10 +2346,6 @@ body { background-image: url("/img/pattern.jpg"); background-repeat: repeat; col
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Acme', sans-serif; color: #010000; text-align: center; text-transform: uppercase; }
 
-h1 { font-size: 2rem; }
-
-h2 { font-size: 1.8rem; }
-
 p { font-size: 1.2em; line-height: 2; color: #010000; font-weight: 300; text-align: center; }
 
 a { color: #ff679a; }
@@ -2394,49 +2390,15 @@ footer a:hover { color: #99ffff !important; text-decoration: none; }
 
 .navbar img { width: 100px; margin-right: 2em; }
 
-.navbar .nav-item { font-size: 1rem; padding-right: 10px; }
+.navbar .nav-item { font-size: 1rem; padding-right: 5px; }
 
 .navbar.py-2 { background-color: #99ffff; }
-
-div.container.justify-content-center { max-width: 950px; }
-
-.navbar-brand { margin: 0; }
 
 .nav-link { font-family: "Acme"; text-transform: uppercase; text-align: center; }
 
 .nav-link:hover { color: #ff679a; text-shadow: 0 0 5px #ff679a !important; }
 
 .current { color: #ff679a !important; }
-
-#banner { position: relative; background: url("../img/banner.jpeg"); min-height: 250px; }
-
-#banner .primary-overlay { background: rgba(141, 2, 31, 0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-#boxes { max-width: 1200px; margin: 2em auto; }
-
-#boxes a { text-decoration: none; }
-
-#boxes h2 { color: #eee; }
-
-#boxes #card-about { background: url("../img/img_innenansicht.jpg"); }
-
-#boxes #card-leistungen { background: url("../img/img_leistungen.jpg"); }
-
-#boxes #card-brillen { background: url("../img/brillen/brille10.jpg"); }
-
-#boxes #card-kontakt { background: url("../img/img_leistungen3.jpg"); }
-
-@media (min-width: 576px) { #boxes #card-about, #boxes #card-leistungen { margin-bottom: 2em; } }
-
-#boxes .col-sm-6 { padding: 0px 1.2em; }
-
-#boxes .card { margin: 0.25em; background-color: #feff99; border-style: none; background-size: cover !important; background-position: center !important; width: 100% !important; height: 400px; }
-
-#boxes .primary-overlay { background: rgba(56, 61, 67, 0.2); }
-
-#boxes .textbox { min-width: 200px; border-radius: 5px; margin-top: 161px; }
-
-#boxes .textbox h2 { margin: 0; }
 
 div.page.container { margin: 1em auto; max-width: 700px; }
 
@@ -2462,17 +2424,13 @@ section.leistungen .card-body { min-height: 336px; }
 
 @media (min-width: 768px) { .carousel-item { background-size: contain; } }
 
-div.urlaub { background-color: #feff99; max-width: 500px; margin: 0 auto; border-radius: 5px; }
-
-div.urlaub p { color: #eee; padding: 1em; }
-
 div.map { padding-top: 1em; background-color: #feff99; text-align: center !important; }
 
 div.map p { color: #eee; }
 
 div.map svg { margin-right: 0.5em; }
 
-div.map iframe { width: 100vw; max-width: 1000px; height: 350px; margin-bottom: 1em; }
+div.map iframe { width: 100%; max-width: 1000px; height: 350px; margin-bottom: 1em; }
 
 div.map a { text-decoration: none; padding: 20px 0; }
 
@@ -2488,7 +2446,7 @@ div.blog h1 { margin: 0.7em auto; }
 
 div.blog ul { list-style-type: none; padding: 0; }
 
-div.blog ul li.posts { background-color: rgba(147, 147, 147, 0.174); border-radius: 1rem; padding: 0.5em; margin-bottom: 1em; }
+div.blog ul li.posts { text-align: center; background-color: #fdff99; border-style: dashed; border-radius: 1rem; border-color: #ff679a; padding: 0.5em; margin-bottom: 1em; box-shadow: 10px 10px 1px #ff679a; }
 
 div.blog ul li.posts h3 { margin-top: 1em; }
 
@@ -2498,7 +2456,7 @@ p img { width: 100%; }
 
 p strong { font-weight: bold; }
 
-img.post-thumbnail { width: 100%; height: 100%; }
+img.post-thumbnail { max-width: 300px; }
 
 .my-button { color: #ff679a; background-color: #feff99; padding: 0.7em; border-radius: 10px; margin: 2em auto; }
 
