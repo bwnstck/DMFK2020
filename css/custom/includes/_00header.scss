@@ -9,24 +9,20 @@
       padding-right: 5px;
     }
   }
+
+  span#navLogoText {
+    font-size: xx-large;
+    font-family: $font-familyH;
+  }
   
   // Hintergrund NavBar
   .navbar.py-2{
     background-color: $fg-color;
   }
 
-  // div.container.justify-content-center{
-  //   max-width: 950px;
-  // }
-
-  // .navbar-brand {
-  //   margin: 0;
-  // }
-  
-
 
   .nav-link {
-    font-family: "Acme";
+    font-family: $font-familyH;
 
     text-transform: uppercase;
     text-align: center;

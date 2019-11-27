@@ -2,12 +2,11 @@
 <html lang="de">
   {% include head.html %}
   <body>
-    {% include header.html %}
-    {% if page.url contains 'about' %} {% include imgslider_about.html %} {% endif %}
-    {% if page.url contains 'leistungen' %} {% include imgslider_leistungen.html %} {% endif %}
-    {% if page.url contains 'brillen' %} {% include imgslider_brillen.html %} {% endif %}
-    <div class="container page">
-      {{ content }}
+    <div class="site">
+      {% include header.html %}
+      <div class="container page">
+        {{ content }}
+      </div>
     </div>
      {% include footer.html %}
   </body>

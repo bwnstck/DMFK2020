@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Bootstrap v4.3.1 (https://getbootstrap.com/) Copyright 2011-2019 The Bootstrap Authors Copyright 2011-2019 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 :root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow: #ffc107; --green: #28a745; --teal: #20c997; --cyan: #17a2b8; --white: #eee; --gray: #6c757d; --gray-dark: #343a40; --primary: #ff679a; --secondary: #6c757d; --success: #28a745; --info: #454d4d; --warning: #ffc107; --danger: #dc3545; --light: #f8f9fa; --dark: #343a40; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px; --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -2342,7 +2343,11 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
   .table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody + tbody { border-color: #dee2e6; }
   .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
 
-body { background-image: url("/img/pattern.jpg"); background-repeat: repeat; color: #ff679a; font-family: 'Montserrat', sans-serif; }
+html, body { background-image: url("/img/pattern.jpg"); background-repeat: repeat; color: #ff679a; font-family: 'Montserrat', sans-serif; height: 100%; text-align: center; }
+
+.site { height: auto; min-height: 100%; }
+
+.page { padding-bottom: 150px; /* Höhe des Footers */ }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Acme', sans-serif; color: #010000; text-align: center; text-transform: uppercase; }
 
@@ -2380,7 +2385,7 @@ div.container, #imgSlider, #boxes { -webkit-animation: fadein 2s; /* Safari, Chr
 @-o-keyframes fadein { from { opacity: 0; }
   to { opacity: 1; } }
 
-footer { background-color: #ff679a; font-size: 0.8em; }
+footer { background-color: #ff679a; font-size: 0.8em; height: 150px; margin-top: -150px; }
 
 footer .col-md-4 { margin: 0.75em 0; }
 
@@ -2391,6 +2396,8 @@ footer a:hover { color: #99ffff !important; text-decoration: none; }
 .navbar img { width: 100px; margin-right: 2em; }
 
 .navbar .nav-item { font-size: 1rem; padding-right: 5px; }
+
+span#navLogoText { font-size: xx-large; font-family: "Acme"; }
 
 .navbar.py-2 { background-color: #99ffff; }
 
@@ -2410,7 +2417,11 @@ div.page.container { margin: 1em auto; max-width: 700px; }
 
 .social-links a:hover { color: #454d4d; cursor: pointer; }
 
-p.untertitel { line-height: 1; }
+.gallery { background-color: #99ffff; width: 50%; margin: 4em; }
+
+.gallery .item { border: 1px solid black; border-radius: 10px; }
+
+.gallery .item img { max-width: 100%; }
 
 section.leistungen .card { background: #feff99; color: #eee; }
 
@@ -2423,16 +2434,6 @@ section.leistungen .card-body { min-height: 336px; }
 .carousel-item { height: 40vh; min-height: 250px; background: no-repeat center center scroll; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 @media (min-width: 768px) { .carousel-item { background-size: contain; } }
-
-div.map { padding-top: 1em; background-color: #feff99; text-align: center !important; }
-
-div.map p { color: #eee; }
-
-div.map svg { margin-right: 0.5em; }
-
-div.map iframe { width: 100%; max-width: 1000px; height: 350px; margin-bottom: 1em; }
-
-div.map a { text-decoration: none; padding: 20px 0; }
 
 #brillen img { background-color: #feff99; margin: 1em auto; padding: 1em 1em; border-radius: 5px; }
 

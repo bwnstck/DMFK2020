@@ -1,0 +1,17 @@
+.gallery {
+
+    background-color: $fg-color;
+    // transform: rotate(-38deg);
+
+    width: 50%;
+    margin: 4em;
+
+    .item {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .item img {
+        max-width: 100%;
+    }
+}
