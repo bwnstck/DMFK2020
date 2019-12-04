@@ -37,60 +37,26 @@
         
           <!-- neuer Versuch -->
             <ul class="navbar-nav justify-content-end">
-
-              {% for link in links %}
-              <li class="nav-item">
-                  <a href="{{link.url}}" class="nav-link">{{link.title}}</a>
-              </li>
-              {% endfor %}
-
-
-              <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-              </li> -->
-
-            </ul>
-
-       
-       
-       
-          <!-- <ul class="navbar-nav justify-content-end">
               {% assign links = site.data.menus %}
               {% for link in links %}
-                {% assign class = nil %}
-                {% if page.title == item.title %}
-                      {% assign class = 'active' %}
-                {% endif %}
                 {% if link.sublinks %}
-                  <li class="dropdown {{ class }}">
-                          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                              {% for sublink in link.sublinks %}
-                                  {% if sublink.title == 'separator' %}
-                                      <li role="separator" class="divider"></li>
-                                  {% else %}
-                                      <li>
-                                          <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                      </li>
-                                  {% endif %}
-                              {% endfor %}
-                          </ul>
-                      </li>
-                  {% else %}
-                      <li class="{{ class }}">
-                          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                      </li>
-                  {% endif %}
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{link.title}}
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          {% for sublink in link.sublinks %}
+                            <a class="dropdown-item" href="{{sublink.url}}">{{sublink.title}}</a>
+                          {% endfor %}          
+                      </div>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                      <a href="{{link.url}}" class="nav-link">{{link.title}}</a>
+                  </li>
+                {% endif %}
               {% endfor %}
-            </ul> -->
+            </ul>   
         </div>
       </div>
 </nav>

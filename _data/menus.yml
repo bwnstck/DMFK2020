@@ -1,25 +1,24 @@
-- title: Info
-  url: /Info/
-  # sublinks:
-  #   - title: Housing
-  #     url: /Unterkunft
-  #   - title: Housing
-  #     url: /Unterkunft
-  #   - title: separator
-  #   - title: Housing
-  #     url: /Unterkunft
+- title: Infos
+  url: /Infos/
+  sublinks:
+    - title: Anreise
+      url: /Anreise
+    - title: Unterkunft
+      url: /Unterkunft
+    - title: Karte
+      url: /Karte
 
-- title: Timetable
-  url: /Timetable
+- title: Programm
+  url: /Programm
 
-- title: Anfahrt
-  url: /Standort
+# - title: Resultate
+#   url: /Resultate
 
-- title: Anmeldung
-  url: /Anmeldung
-
-- title: Kontakt
-  url: /Kontakt
+# - title: Anmeldung
+#   url: /Anmeldung
 
 - title: News
   url: /News
+
+- title: Kontakt
+  url: /Kontakt
