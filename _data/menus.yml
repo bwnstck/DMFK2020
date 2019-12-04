@@ -1,13 +1,5 @@
 - title: Info
-  subfolderitems:
-    - title: LEck
-      link: /Info/
-    - title: Info
-      link: /Info/
-    - title: Info
-      link: /Info/
-
-  
+  link: /Info/
 
 - title: Timetable
   link: /Timetable
