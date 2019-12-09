@@ -1,7 +1,12 @@
 html, body {
     // background-color: $fg-color;
-    background-image: url("/img/pattern.jpg");
-    background-repeat: repeat;
+
+// 
+
+//     background-image: url("/img/pattern.jpg");
+
+    // background-color: white;
+    // background-repeat: repeat;
 
     
     color: $primary;
@@ -16,12 +21,12 @@ html, body {
     min-height: 100%;
 }
 
-.page {
-    padding-bottom: 150px; /* Höhe des Footers */
-
-}
 
 // Überschriften
+
+h1 {
+    font-size: 2.2em;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-familyH;
     

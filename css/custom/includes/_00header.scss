@@ -7,12 +7,21 @@
     .nav-item{
       font-size: 1rem;
       padding-right: 5px;
+
+        // Hover Effekt für Menüelemente
+      a:hover {
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1);
+        border-radius: 10px;
+      }
+
     }
   }
 
   span#navLogoText {
-    font-size: xx-large;
     font-family: $font-familyH;
+    color: white;
+    text-shadow: 0px 3px 4px $primary;
+   
   }
   
   // Hintergrund NavBar
