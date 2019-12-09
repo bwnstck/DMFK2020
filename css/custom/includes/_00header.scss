@@ -1,8 +1,6 @@
 .navbar{
-    img {
-      width: 100px;
-      margin-right: 2em;
-    }
+    
+
   
     .nav-item{
       font-size: 1rem;
@@ -33,6 +31,12 @@
     font-family: $font-familyH;
     color: white;
     text-shadow: 0px 3px 4px $primary;
+
+    //FontAwesome ICONS
+    img.favicon {
+      height: 30px;
+      margin: auto 2.5px;
+    }
    
   }
   
