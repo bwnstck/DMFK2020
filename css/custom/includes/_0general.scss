@@ -10,7 +10,7 @@ html, body {
 
     
     color: $primary;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-familyP;
     // font-weight: 200;
     height: 100%;
     text-align: center;
@@ -67,6 +67,13 @@ ul li a {
 
 hr {
     width: 50%;
+}
+
+
+// Buttons
+
+.btn {
+    font-family: $font-familyH;
 }
 
 
