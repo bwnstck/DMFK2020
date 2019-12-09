@@ -14,6 +14,17 @@
         border-radius: 10px;
       }
 
+      .dropdown-menu {
+        background-image: url("/img/pattern.jpg");
+        background-color: white;
+        background-repeat: repeat;
+
+        border-radius: 10px;
+
+        .dropdown-item:hover, .dropdown-item:focus {
+          background-color: transparent;
+        }
+      }
     }
   }
 
@@ -30,7 +41,7 @@
   }
 
 
-  .nav-link {
+  .nav-link, .dropdown-item{
     font-family: $font-familyH;
 
     text-transform: uppercase;
