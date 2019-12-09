@@ -15,11 +15,12 @@
       }
 
       .dropdown-menu {
-        background-image: url("/img/pattern.jpg");
-        background-color: white;
+        // background-image: url("/img/pattern.jpg");
+        background-color: $fg-color;
         background-repeat: repeat;
+        border: none;
 
-        border-radius: 10px;
+        border-radius: 0px 0px 10px 10px;
 
         .dropdown-item:hover, .dropdown-item:focus {
           background-color: transparent;
@@ -48,7 +49,7 @@
     text-align: center;
 
     &:hover {
-      color: $primary;
+      color: white !important;
       text-shadow: 0 0 5px $primary !important;
     }
   }
