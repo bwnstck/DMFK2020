@@ -17,8 +17,11 @@ html, body {
 }
 
 .site {
-    height: auto;
     min-height: 100%;
+}
+
+.blocker {
+    height: 90px;
 }
 
 
