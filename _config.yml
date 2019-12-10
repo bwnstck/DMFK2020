@@ -15,9 +15,9 @@ include: [.htaccess]
 exclude: [.jekyll-cache, yarn.lock, robots.txt, package.json, .DS_Store]
 
 # Social icons
-show_social_icons: false
-github_username: someGithubUser
-twitter_username: someTwitterUser
+show_social_icons: true
+insta_username: dmfk2020
+facebook_username: dmfk2020
 
 # Plugins
 

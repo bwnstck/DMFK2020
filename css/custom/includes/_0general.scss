@@ -1,13 +1,4 @@
 html, body {
-
-    // background-color: $fg-color;
-
-// 
-
-//     background-image: url("/img/pattern.jpg");
-//       background-color: white;
-//      background-repeat: repeat;
-
     
     color: $primary;
     font-family: $font-familyP;
@@ -59,6 +50,14 @@ a {
     }
 }
 
+.btn-hover:hover{
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1) !important;border-radius: 0.25rem;
+
+        a {
+            text-shadow: 0 0 5px black !important;
+        }
+}
+
 .img {
     margin: 1.5em auto;
     max-width: 800px;
@@ -78,6 +77,26 @@ hr {
 .btn {
     font-family: $font-familyH;
 }
+
+// Social Links
+
+.social-links {
+   
+    margin: 1em auto;
+
+    a {
+
+        width: 35px;    
+        text-decoration: none;
+        padding-right: 10px;
+        color: white;
+    
+        &:hover {
+            color: $info;
+            cursor: pointer;
+        }
+    }   
+  }
 
 
 /* Transistion Animations */
