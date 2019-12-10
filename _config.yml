@@ -16,8 +16,8 @@ exclude: [.jekyll-cache, yarn.lock, robots.txt, package.json, .DS_Store]
 
 # Social icons
 show_social_icons: false
-github_username: someGithubUser
-twitter_username: someTwitterUser
+facebook_username: someTwitterUser
+instragram_username: dmfk2020
 
 # Plugins
 
