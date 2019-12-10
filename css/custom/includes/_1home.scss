@@ -1,24 +1,14 @@
 
 #video_background {
-
     position: fixed;
-    
     top: 0px;
-    
     left: 0px;
-    
     min-width: 100%;
-    
-    min-height: 100%;
-    
-    width: auto;
-    
+    min-height: 100%; 
+    width: auto; 
     height: auto;
-    
     z-index: -100;
-    
     overflow: hidden;
-    
 }
 
 #video_pattern {
@@ -33,7 +23,11 @@
 }
 
 #logoHome {
-    margin: 5em auto;
+    margin: 3em auto;
+}
+
+button.btn{
+    margin: 2em auto;
 }
 
 #sponsoren {
