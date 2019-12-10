@@ -10,10 +10,10 @@ description: Alle beinharten News zur DMFK 2020 in Freiburg!!
   <a href="{{ post.url }}">
     <li class="posts">
       <h3>{{ post.title }}</h3>
-      <p style="font-size: 0.9rem">{{ post.date | date: "%-d/%-m/%y" }}</p>
+      <p class="post_date">{{ post.date | date: "%d.%m.20%y" }}</p>
       <img class="post-thumbnail" src="{{post.image}}" alt="Post Thumbnail">
       <p>{{ post.myexcerpt }}</p>
-      <p><a class="my-button" href="{{ post.url }}">Gib mir mehr…!</a></p>
+      <p><a class="btn btn-secondary shadow" href="{{ post.url }}">Gib mir mehr…!</a></p>
       <div class="clearfix"></div>
     </li>
   </a>

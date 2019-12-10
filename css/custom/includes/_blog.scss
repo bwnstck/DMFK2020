@@ -1,28 +1,41 @@
-div.blog {
 
-    h1 {
-        margin: 0.7em auto;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
 
-        li.posts {
-            text-align: center;
-            background-color: $primary2;
+h1 {
+    margin: 0.7em auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
 
-            border-style: dashed;
-            border-radius: 1rem;
-            border-color: $primary;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            box-shadow: 10px 10px 1px $primary;
-        
-            h3 {
-                margin-top: 1em;
-            }
+    li.posts {
+        text-align: center;
+        background-color: $bg-color;
+
+        border-style: dashed;
+        border-radius: 1rem;
+        border-color: $primary;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-shadow: 2px 2px 1px $primary;
+    
+        h3 {
+            margin-top: 1em;
+        }
+
+        .post_date{
+            font-size: 1rem;
+            font-weight: bolder;
+            font-style: italic;
+            margin: 0;
+
+            color: $primary;
+            text-shadow: 0px 1px 1px $fg-color;
         }
     }
+}
+
+.beitrag {
+    margin-bottom: 2em;
 }
 
 // div.container {
