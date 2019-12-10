@@ -12,7 +12,7 @@ permalink: :title/
 sass:
   sass_dir: css
 include: [.htaccess]
-exclude: [yarn.lock, robots.txt, package.json, .DS_Store]
+exclude: [.jekyll-cache, yarn.lock, robots.txt, package.json, .DS_Store]
 
 # Social icons
 show_social_icons: false
@@ -23,4 +23,4 @@ twitter_username: someTwitterUser
 
 plugins:
   # - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-seo-tags
