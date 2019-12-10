@@ -1,6 +1,8 @@
 footer  {
     background-color: $primary;
     font-size: 0.9em;
+    font-family: $font-familyH;
+    font-weight: lighter;
     text-transform: uppercase;
     font-family: $font-familyH;
     letter-spacing: 0.2em;
@@ -12,18 +14,13 @@ footer  {
     
     padding-top:20px;
 
-    .row {
-        div{
-            margin-bottom: 0.5em;
-        }
-        
+    .col-md-4 {
+        margin: 0.75em 0;
     }
 
 
     a {
         color: white;
-        font-weight: bold;
-        padding: 18px 0;
         
         &:hover {
             color: $fg-color !important;
