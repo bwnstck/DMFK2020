@@ -1,5 +1,4 @@
 .navbar{
-    
 
   
     .nav-item{
@@ -14,7 +13,7 @@
 
       .dropdown-menu {
         // background-image: url("/img/pattern.jpg");
-        background-color: $fg-color;
+        background-color: $dark;
         background-repeat: repeat;
         border: none;
 
@@ -42,11 +41,12 @@
   
   // Hintergrund NavBar
   .navbar.py-2{
-    background-color: $fg-color;
+    background-color: $dark;
   }
 
 
   .nav-link, .dropdown-item{
+    color: white !important;
     font-family: $font-familyH;
 
     text-transform: uppercase;
