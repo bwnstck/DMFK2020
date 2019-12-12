@@ -1,7 +1,9 @@
 de:
   label: Deutsch
   icon: 🇩🇪
+  url: de
 
 en:
   label: English
   icon: 🇬🇧
+  url: en
