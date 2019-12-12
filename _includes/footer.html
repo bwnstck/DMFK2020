@@ -10,27 +10,14 @@
         </div>
         <div class="col-md-6 my-1">
             <img src="/img/icons/bike1.svg" class="favicon" alt="Favicon Bike"> 
-          <a href="
-          {% if page.lang == de %}
-             {{ site.url }}/{{ site.data.languages.de.url }}/Datenschutz
-            {% else %}
-              {{ site.url }}/{{ site.data.languages.en.url }}/Privacy
-            {% endif %}
-            ">
-            {{ site.data.translations.Datenschutz[page.lang] }}</a>
+            <a href="{{ site.url }}/{{ page.lang }}/{{ site.data.translations.Datenschutz.[page.lang]}}">
+              {{ site.data.translations.Datenschutz[page.lang] }}</a>
           <img src="/img/icons/christmas-tree.svg" class="favicon" alt="Favicon Mountain">
         </div>
         <div class="col-md-6 my-1">
             <img src="/img/icons/mountain1.svg" class="favicon" alt="Favicon Mountain"> 
-            <a href="
-            {% if page.lang == de %}
-             {{ site.url }}/{{ site.data.languages.de.url }}/Impressum
-            {% else %}
-              {{ site.url }}/{{ site.data.languages.en.url }}/LegalNotice
-            {% endif %}
-            "
-            
-            >{{ site.data.translations.Impressum[page.lang] }}</a>
+            <a href="{{ site.url }}/{{ page.lang }}/{{ site.data.translations.Impressum.[page.lang]}}">
+             {{ site.data.translations.Impressum[page.lang] }}</a>
             <img src="/img/icons/bike.svg" class="favicon" alt="Favicon Bike"> 
         </div>
         <div class="col-md my-1">

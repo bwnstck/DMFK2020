@@ -24,11 +24,11 @@
         
           <!-- Logic -->
             <ul class="navbar-nav justify-content-end">
-              {{% if page.lang = de %}}
+              {% if page.url contains "/de/" %}
                 {% assign links = site.data.menus_de %}
-                {{% else %}}
+              {% else %}
                 {% assign links = site.data.menus_en %}
-                {{% endif %}}
+              {% endif %}
 
                 {% for link in links %}
                   {% if link.sublinks %}
