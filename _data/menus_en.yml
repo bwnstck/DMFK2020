@@ -1,0 +1,24 @@
+- title: Infos
+  url: /en/Infos/en/
+  sublinks:
+    - title: Locations
+      url: /en/Locations
+    - title: Accommodation
+      url: /en/Accommodation
+    - title: Map
+      url: /en/Map
+
+- title: Program
+  url: /en/Program
+
+# - title: Resultate
+#   url: /en/Resultate
+
+# - title: Anmeldung
+#   url: /en/Anmeldung
+
+- title: News
+  url: /en/News
+
+- title: Contact
+  url: /en/Contact

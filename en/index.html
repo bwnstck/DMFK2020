@@ -1,9 +1,9 @@
 ---
 layout: default
-lang: de
-title: HQ
-
 description: Hier gehts um die DMFK 2020 in Freiburg im Breisgau
+lang: en
+title: HQ
+url: home
 ---
 
 <!-- Hintergrundvideo -->
@@ -25,7 +25,8 @@ description: Hier gehts um die DMFK 2020 in Freiburg im Breisgau
 </div>
 
 <!-- Anmeldebutton -->
-<button type="button" class="btn btn-secondary shadow btn-hover"><a href="/de/Anmeldung"> // {{ site.data.translations.Anmeldung[page.lang] }} \\</a></button>
+<button type="button" class="btn btn-secondary shadow btn-hover">
+    <a href="{{ site.url}}/{{ site.data.languages.en.url }}/Registration"> // {{ site.data.translations.Anmeldung[page.lang] }} \\</a></button>
 
 <!-- Social Icons -->
 {% include social_links.html %}

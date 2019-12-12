@@ -1,15 +1,15 @@
 ---
 layout: default
 title: Kontakt
-
-lang: de
-en_title: Contact 
 description: So könnt ihr uns auf der DMFK 2020 in Freiburg erreichen.
+en_title: Contact
+lang: de
 ---
 <h1>{{page.title}}</h1>
 
+<a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }} ">
+    {{ site.data.languages.en.icon }}</a>
+
 <p>Einfach per Mail an :</p><br>
-
-<a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }} ">{{ site.data.languages.en.icon }}</a>
-
 <a class="btn-hover" href="mailto:info@dmfk2020.de">info[at]dmfk2020.de</a>
+

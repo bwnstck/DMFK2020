@@ -1,0 +1,24 @@
+- title: Infos
+  url: /de/Infos/de/
+  sublinks:
+    - title: Anreise
+      url: /de/Anreise
+    - title: Unterkunft
+      url: /de/Unterkunft
+    - title: Karte
+      url: /de/Karte
+
+- title: Programm
+  url: /de/Programm
+
+# - title: Resultate
+#   url: /de/Resultate
+
+# - title: Anmeldung
+#   url: /de/Anmeldung
+
+- title: News
+  url: /de/News
+
+- title: Kontakt
+  url: /de/Kontakt

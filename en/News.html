@@ -1,0 +1,21 @@
+---
+layout: default
+title: News
+description: Alle beinharten News zur DMFK 2020 in Freiburg!!
+---
+<h1>News</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <li class="posts">
+      <h3>{{ post.title }}</h3>
+      <p class="post_date">{{ post.date | date: "%d.%m.20%y" }}</p>
+      <img class="post-thumbnail" src="{{post.image}}" alt="Post Thumbnail">
+      <p>{{ post.myexcerpt }}</p>
+      <p><a class="btn btn-secondary shadow" href="{{ post.url }}">Gib mir mehr…!</a></p>
+      <div class="clearfix"></div>
+    </li>
+  </a>
+  {% endfor %}
+</ul>

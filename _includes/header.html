@@ -1,7 +1,7 @@
 <!-- NAV -->
  <nav class="navbar navbar-expand-md navbar-dark py-2 fixed-top shadow">
     <div class="container">
-        <a class="navbar-brand " href="/">
+        <a class="navbar-brand " href="{{ site.url}}/{{ page.lang }}/">
           <span id="navLogoText">
               <!-- <i class="fas fa-bicycle"></i>
             <i class="fas fa-tree"></i>
@@ -9,19 +9,14 @@
             <img src="/img/icons/trees.svg" class="favicon" alt="Favicon Mountain">
             DMFK 2020 <img src="/img/icons/bike.svg" class="favicon" alt="Favicon Bike"> FRBG
           <img src="/img/icons/mountain1.svg" class="favicon" alt="Favicon Bike">
-
-          <div id="transBox">
-            <a href="{{ site.url}}/{{ site.data.languages.de.url }}/{{page.url}} ">
-              {{ site.data.languages.de.icon }}</a>
-            <a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{page.url}} ">
-              {{ site.data.languages.en.icon }}</a>
-          </div>
-        
-          
-         
-
           </span>
         </a>
+        <div id="transBox">
+            <a href="{{ site.url}}/{{ site.data.languages.de.url }}/{{page.de_title}} ">
+              {{ site.data.languages.de.icon }}</a>
+            <a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }} ">
+              {{ site.data.languages.en.icon }}</a>
+          </div>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -29,25 +24,32 @@
         
           <!-- Logic -->
             <ul class="navbar-nav justify-content-end">
-              {% assign links = site.data.menus %}
-              {% for link in links %}
-                {% if link.sublinks %}
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{link.title}}
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          {% for sublink in link.sublinks %}
-                            <a class="dropdown-item" href="{{sublink.url}}">{{sublink.title}}</a>
-                          {% endfor %}          
-                      </div>
-                  </li>
-                {% else %}
-                  <li class="nav-item">
-                      <a href="{{link.url}}" class="nav-link">{{link.title}}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
+              {{% if page.lang = de %}}
+                {% assign links = site.data.menus_de %}
+                {{% else %}}
+                {% assign links = site.data.menus_en %}
+                {{% endif %}}
+
+                {% for link in links %}
+                  {% if link.sublinks %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          {{link.title}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% for sublink in link.sublinks %}
+                              <a class="dropdown-item" href="{{sublink.url}}">{{sublink.title}}</a>
+                            {% endfor %}          
+                        </div>
+                    </li>
+                  {% else %}
+                    <li class="nav-item">
+                        <a href="{{link.url}}" class="nav-link">{{link.title}}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+             
+              
             </ul>   
         </div>
       </div>
