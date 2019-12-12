@@ -1,7 +1,7 @@
 ---
 layout: default
 description: Hier gehts um die DMFK 2020 in Freiburg im Breisgau
-lang: de
+lang: en
 title: HQ
 url: home
 ---
@@ -16,10 +16,8 @@ url: home
 </div>
 
     
-<h1 style="color: white;">
-        {{ site.data.translations.DMFK.[page.lang] }}
-         2020</h1>
-<h3 id="indexDate" style="color: white;">11-14 Juni 2020</h3>
+<h1 style="color: white;"> {{ site.data.translations.dmfk_title[page.lang] }} 2020</h1>
+<h3 id="indexDate" style="color: white;">{{ site.data.translations.dmfk_date[page.lang] }}</h3>
 
 <!-- Logo -->
 <div class="container">    
@@ -27,7 +25,7 @@ url: home
 </div>
 
 <!-- Anmeldebutton -->
-<button type="button" class="btn btn-secondary shadow btn-hover"><a href="/Anmeldung"> // Anmeldung \\</a></button>
+<button type="button" class="btn btn-secondary shadow btn-hover"><a href="/Anmeldung"> // {{ site.data.translations.Anmeldung[page.lang] }} \\</a></button>
 
 <!-- Social Icons -->
 {% include social_links.html %}
@@ -35,7 +33,7 @@ url: home
 
 <!-- Sponsoren -->
 <div id="sponsoren" class="shadow bg-dark">
-    <h2>Sponsoren</h2>
+    <h2>{{ site.data.translations.Sponsoren[page.lang] }}</h2>
     <div class="row">
         <div class="col-sm">
             <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>

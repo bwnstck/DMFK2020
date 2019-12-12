@@ -1,3 +1,33 @@
-DMFK:
-    de: DEUTSCHE FAHRRADKURIER MEISTERSCHAFTEN
-    en: German Cycle Messenger Championships
+#Menüpunkte
+Infos:
+  de: Infos
+  en: Information
+
+Kontakt:
+  de: Kontakt
+  en: Contact
+
+Datenschutz:
+  de: Datenschutz
+  en: Privacy
+
+Impressum:
+  de: Impressum
+  en: Legal notice
+  
+#Index
+dmfk_title:
+  de: DEUTSCHE FAHRRADKURIER MEISTERSCHAFTEN
+  en: German Cycle Messenger Championships
+
+dmfk_date:
+  de: 11-14 Juni 2020
+  en: 11-14 June 2020
+
+Anmeldung:
+  de: Anmeldung
+  en: Registration
+
+Sponsoren:
+  de: Sponsoren
+  en: Sponsors
