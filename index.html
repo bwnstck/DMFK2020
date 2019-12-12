@@ -5,56 +5,17 @@ title: HQ
 
 description: Hier gehts um die DMFK 2020 in Freiburg im Breisgau
 ---
-
 <!-- Hintergrundvideo -->
 <div>
-    <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"> 
-        <source src="/img/herovid.mp4" type="video/mp4">
-            Video not supported
-    </video>
-    <div id="video_pattern"></div>
-</div>
-
+        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"> 
+            <source src="/img/herovid.mp4" type="video/mp4">
+                Video not supported
+        </video>
+        <div id="video_pattern"></div>
+    </div>
     
-<h1 style="color: white;"> {{ site.data.translations.dmfk_title[page.lang] }} 2020</h1>
-<h3 id="indexDate" style="color: white;">{{ site.data.translations.dmfk_date[page.lang] }}</h3>
-
-<!-- Logo -->
-<div class="container">    
-    <img id="logoHome" class="img-fluid" src="/img/logo2_white.png" alt="DMFK Logo">
-</div>
-
-<!-- Anmeldebutton -->
-<button type="button" class="btn btn-secondary shadow btn-hover"><a href="/de/Anmeldung"> // {{ site.data.translations.Anmeldung[page.lang] }} \\</a></button>
-
-<!-- Social Icons -->
-{% include social_links.html %}
-
-
-<!-- Sponsoren -->
-<div id="sponsoren" class="shadow bg-dark">
-    <h2>{{ site.data.translations.Sponsoren[page.lang] }}</h2>
-    <div class="row">
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-        <div class="col-sm">
-            <a href="#"><img src="/img/sponsors/logo_sehgut.svg" alt="Sponsor1"></a>
-        </div>
-    </div>
-   
+<div id="chooseLanguage" class="card-body">
+        <h2 style="color: white;">Sprache // Language</h2>
+        <a href="/de/">{{ site.data.languages.de.icon}}</a>
+        <a href="/en/">{{ site.data.languages.en.icon}}</a>
 </div>
