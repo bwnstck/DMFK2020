@@ -1,5 +1,8 @@
 .navbar{
 
+    .navbar-brand {
+      margin: 0;
+    }
   
     .nav-item{
       font-size: 1rem;
@@ -38,6 +41,14 @@
     margin: auto 2.5px;
   }
   
+// Sprachauswahl
+
+#transBox {
+  margin: 0;
+  padding: 0;
+}
+
+
   // Hintergrund NavBar
   .navbar.py-2{
     background-color: $dark;

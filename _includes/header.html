@@ -11,12 +11,6 @@
           <img src="/img/icons/mountain1.svg" class="favicon" alt="Favicon Bike">
           </span>
         </a>
-        <div id="transBox">
-            <a href="{{ site.url}}/{{ site.data.languages.de.url }}/{{page.de_title}} ">
-              {{ site.data.languages.de.icon }}</a>
-            <a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }} ">
-              {{ site.data.languages.en.icon }}</a>
-          </div>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -29,7 +23,7 @@
               {% else %}
                 {% assign links = site.data.menus_en %}
               {% endif %}
-
+              {% if page.layout == "default" %}
                 {% for link in links %}
                   {% if link.sublinks %}
                     <li class="nav-item dropdown">
@@ -48,8 +42,15 @@
                     </li>
                   {% endif %}
                 {% endfor %}
-             
-              
+                {% endif %}
+               <li class="nav-item">
+                  <a href="{{ site.url}}/{{ site.data.languages.de.url }}/{{page.de_title}}" class="nav-link">
+                    {{ site.data.languages.de.icon }}</a>
+               </li>
+               <li class="nav-item">
+                  <a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }}" class="nav-link">
+                    {{ site.data.languages.en.icon }}</a>
+               </li>
             </ul>   
         </div>
       </div>
