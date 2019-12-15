@@ -1,7 +1,7 @@
 <!-- NAV -->
  <nav class="navbar navbar-expand-md navbar-dark py-2 fixed-top shadow">
     <div class="container">
-        <a class="navbar-brand " href="{{ site.url}}/{{ page.lang }}/">
+        <a class="navbar-brand " href="/{{ page.lang }}/">
           <span id="navLogoText">
               <!-- <i class="fas fa-bicycle"></i>
             <i class="fas fa-tree"></i>
@@ -44,11 +44,11 @@
                 {% endfor %}
                 {% endif %}
                <li class="nav-item">
-                  <a href="{{ site.url}}/{{ site.data.languages.de.url }}/{{page.de_title}}" class="nav-link">
+                  <a href="/{{ site.data.languages.de.url }}/{{page.de_title}}" class="nav-link">
                     {{ site.data.languages.de.icon }}</a>
                </li>
                <li class="nav-item">
-                  <a href="{{ site.url}}/{{ site.data.languages.en.url }}/{{ page.en_title }}" class="nav-link">
+                  <a href="/{{ site.data.languages.en.url }}/{{ page.en_title }}" class="nav-link">
                     {{ site.data.languages.en.icon }}</a>
                </li>
             </ul>   
