@@ -7,15 +7,14 @@
       url: /en/Accommodation
     - title: Map
       url: /en/Map
+    - title: Program
+      url: /en/Program
 
-- title: Program
-  url: /en/Program
+- title: Registration
+  url: /en/Registration
 
 # - title: Resultate
 #   url: /en/Resultate
-
-# - title: Anmeldung
-#   url: /en/Anmeldung
 
 - title: News
   url: /en/News

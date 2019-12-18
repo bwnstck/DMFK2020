@@ -7,15 +7,15 @@
       url: /de/Unterkunft
     - title: Karte
       url: /de/Karte
+    - title: Programm
+      url: /de/Programm
 
-- title: Programm
-  url: /de/Programm
+- title: Anmeldung
+  url: /de/Anmeldung
 
 # - title: Resultate
 #   url: /de/Resultate
 
-# - title: Anmeldung
-#   url: /de/Anmeldung
 
 - title: News
   url: /de/News
